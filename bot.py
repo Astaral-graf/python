@@ -74,8 +74,8 @@ def callback_handler(call):
                            f"2. Запустите start(general).bat\n"
                            f"3. Введите ключ\n"
                            f"4. Наслаждайтесь 7 днями без блокировок!\n\n"
-                           f"⚠️ Закройте антивирус на время установки.\n"
-                           f"💬 Поддержка: @your_support",
+                           f"⚠️ Рекомендуется временно отключить антивирус, так как он может блокировать приложение.\n"
+                           f"💬 Поддержка: @dpibreak_support",
                     parse_mode='Markdown'
                 )
             
@@ -97,5 +97,6 @@ if __name__ == '__main__':
     logger.info(f"Ключ: {KEY}")
     
     bot.infinity_polling(none_stop=True, interval=1, timeout=30)
+
 
 
