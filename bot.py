@@ -71,7 +71,7 @@ def callback_handler(call):
                            f"🔑 **Ваш ключ активации:**\n`{KEY}`\n\n"
                            f"**Инструкция:**\n"
                            f"1. Распакуйте RAR-архив (WinRAR/7-Zip)\n"
-                           f"2. Запустите dpi_breaker.exe\n"
+                           f"2. Запустите start(general).bat\n"
                            f"3. Введите ключ\n"
                            f"4. Наслаждайтесь 7 днями без блокировок!\n\n"
                            f"⚠️ Закройте антивирус на время установки.\n"
@@ -97,4 +97,5 @@ if __name__ == '__main__':
     logger.info(f"Ключ: {KEY}")
     
     bot.infinity_polling(none_stop=True, interval=1, timeout=30)
+
 
