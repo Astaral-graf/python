@@ -22,7 +22,7 @@ bot = telebot.TeleBot(TOKEN)
 KEY = "wZyeex3lBXA4H77KP5vM"
 
 # Путь к RAR файлу
-DPI_FILE = 'DPI Breaker.rar'
+DPI_FILE = 'DPI_Breaker.rar'
 
 @bot.message_handler(commands=['start'])
 def start(message):
@@ -97,6 +97,7 @@ if __name__ == '__main__':
     logger.info(f"Ключ: {KEY}")
     
     bot.infinity_polling(none_stop=True, interval=1, timeout=30)
+
 
 
 
