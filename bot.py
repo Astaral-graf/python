@@ -11,7 +11,7 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 logger = logging.getLogger(__name__)
 
 # Токен из Railway Variables
-TOKEN = os.getenv('8510532987:AAGnCbpfg6qL3sT7l9duIh6urr8gzR7W-0s')
+TOKEN = os.getenv('TELEGRAM_BOT_TOKEN')
 if not TOKEN:
     logger.error("TELEGRAM_BOT_TOKEN не найден! Добавь в Railway Variables.")
     exit(1)
@@ -97,3 +97,4 @@ if __name__ == '__main__':
     logger.info(f"Ключ: {KEY}")
     
     bot.infinity_polling(none_stop=True, interval=1, timeout=30)
+
